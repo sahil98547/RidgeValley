@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.item img {
+  height: 100vh;
+}
+
+.banner-content {
+  padding-top: 100px;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.main-heading {
+  margin-bottom: 35px;
+}
+
+.primary-heading {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.secondary-heading {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 45%;
+  left: -0.3%;
+  background-color: #111;
+}
+
+.btn-danger {
+  margin-top: 40px;
+  padding: 5px 10px;
+  padding-top: 2px;
+  border-radius: 0%;
+}
+
+.owl-next {
+  position: absolute;
+  top: 45%;
+  right: -0.3%;
+  background-color: #111;
+}
+
+.owl-prev span,
+.owl-next span {
+  background-color: rgba(0, 0, 0, 0.67);
+  color: white;
+  display: block;
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  background: transparent !important;
+  color: #000000 !important;
+}
+
+.text-center.kenburns-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: p;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.kenburns-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.kenburns-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/image-1.jpg");
+  background-size: cover;
+  position: absolute;
+  animation: zoomIn 20s ease infinite;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+/* Media query for screens 768px wide and larger */
+@media (max-width: 768px) {
+  .primary-heading {
+    font-size: 35px;
+  }
+
+  .secondary-heading {
+    font-size: 25px;
+  }
+
+  .main-heading {
+    margin-bottom: 15px;
+  }
+
+  .owl-prev {
+    left: -0.7%;
+  }
+
+  .owl-next {
+    right: -0.7%;
+  }
+}
+
+/* Media query for screens 425px wide and larger */
+@media (max-width: 425px) {
+  .primary-heading {
+    font-size: 20px;
+  }
+
+  .secondary-heading {
+    font-size: 15px;
+  }
+
+  .main-heading {
+    margin-bottom: 15px;
+  }
+
+  .owl-prev {
+    left: -1.1%;
+  }
+
+  .owl-next {
+    right: -1.1%;
+  }
+}
